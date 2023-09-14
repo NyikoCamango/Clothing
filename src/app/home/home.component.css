@@ -33,7 +33,7 @@
   }
   
   .cta-button:hover {
-    background-color: #FFCC70;; /* Change the color on hover */
+    background-color: #FFCC70;
   }
   
   .featured-products {
@@ -50,10 +50,13 @@
     display: inline-block;
     margin: 20px;
     text-align: center;
+    width: 300px; 
   }
   
   .product-card img {
     max-width: 100%;
+    width: 200px;
+    height: 200px;
   }
   
   .product-card h3 {
