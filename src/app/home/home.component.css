@@ -7,9 +7,28 @@
   .hero {
     text-align: center;
     padding: 100px 0;
-    background-color: #f4f4f4;
+    background-image: url('src/assets/image/HomePageSneaker.jpeg');
+    background-repeat: no-repeat;
+    animation: moveBackground 20s linear infinite;
+    
+}
+@keyframes moveBackground {
+    0% {
+      background-position: center;
+    }
+    25% {
+      background-position: top left;
+    }
+    50% {
+      background-position: top right;
+    }
+    75% {
+      background-position: bottom right;
+    }
+    100% {
+      background-position: bottom left;
+    }
   }
-  
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -50,14 +69,15 @@
     display: inline-block;
     margin: 20px;
     text-align: center;
-    width: 300px; 
+    width: 400px; 
   }
   
   .product-card img {
     max-width: 100%;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
   }
+  
   
   .product-card h3 {
     font-size: 1.5rem;
